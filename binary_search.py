@@ -25,7 +25,7 @@ def search(nums: list[int], target: int, low, high) -> int:
         else:
             #Do the search again, but with the min set as 1 greater than the midpoint, effectively searching through the second half of the list.
             return search(nums, target, mid + 1, high)
-    #If the target is not present in the list, return -1
+    #If the target is not present in the list, return
     else:
         return -1
 
